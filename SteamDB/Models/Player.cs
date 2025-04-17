@@ -9,11 +9,11 @@ public class Player
 
     [Required]
     [StringLength(12)]
-    public string Username { get; set; }
+    public required string Username { get; set; }
 
     [Required]
     [StringLength(255)]
-    public string Email { get; set; }
+    public required string Email { get; set; }
 
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public DateTime DeletedAt { get; set; } = DateTime.UtcNow;

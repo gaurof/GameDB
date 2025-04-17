@@ -12,4 +12,6 @@ public class Achievement
     public int PlayerId { get; set; }
     public bool IsAchieved { get; set; }
     public DateTime UnlockedAt { get; set; } = DateTime.UtcNow;
+
+    public required Game Game { get; set; }
 }

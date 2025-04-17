@@ -15,7 +15,7 @@ public class Save
     [ForeignKey("Game")]
     public int GameId { get; set; }
 
-    public JsonDocument SaveData { get; set; }
+    public required string SaveData { get; set; }
 
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public DateTime? EditedAt { get; set; }

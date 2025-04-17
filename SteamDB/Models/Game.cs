@@ -28,7 +28,7 @@ public class Game
     public DateTime? DeletedAt { get; set; }
 
     public Franchise? Franchise { get; set; }
-    public Publisher Publisher { get; set; }
+    public required Publisher Publisher { get; set; }
     public List<Save> PlayerSaves { get; set; } = [];
     public List<Achievement> Achievements { get; set; } = [];
 }

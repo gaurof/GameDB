@@ -10,7 +10,7 @@ public class Franchise
 
     [Required]
     [StringLength(255)]
-    public string Name { get; set; };
+    public required string Name { get; set; }
 
     [ForeignKey("Publisher")]
     public int PublisherId { get; set; }
@@ -19,6 +19,6 @@ public class Franchise
     public DateTime EditedAt { get; set; } = DateTime.UtcNow;
     public DateTime? DeletedAt { get; set; }
 
-    public Publisher Publisher { get; set; };
+    public required Publisher Publisher { get; set; }
     public List<Game> Games { get; set; } = [];
 }
